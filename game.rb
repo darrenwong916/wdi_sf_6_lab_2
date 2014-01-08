@@ -24,7 +24,7 @@ File.open("story.txt", "r") do |infile|
 	puts "Please Choose 1-3"
 	choice = gets.to_i
 	uc = choice + 1
-until choice == 1..3
+if choice == 0..3
 	puts "Wrong Number! please try again!"
 	choice = gets.to_i
 	uc = choice + 1
